@@ -1,0 +1,23 @@
+{
+  "name": "grpc-http-proxy",
+  "version": "1.0.0",
+  "description": "gRPC HTTP Proxy",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm run build && node build/main/index.js",
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.2.2"
+  }
+}
